@@ -55,10 +55,10 @@ export default function Post({
   return (
     <>
       <div className="flex flex-col border border-[#999999] m-6 rounded-2xl">
-        <header className="flex items-center justify-between bg-primary w-full text-white p-6 rounded-t-2xl rounded-b-none">
-          <h1 className="text-[1.375rem] font-bold">{title}</h1>
+        <header className="flex items-center justify-between bg-primary w-full text-white p-4 md:p-6 rounded-t-2xl rounded-b-none">
+          <h1 className="text-lg md:text-[1.375rem] font-bold">{title}</h1>
           {userCanEditandDelete && (
-            <div className="flex items-center justify-center gap-6">
+            <div className="flex items-center justify-center gap-2 md:gap-6">
               <button type="button" className="cursor-pointer" onClick={handleDelete}>
                 <Image src={Delete} alt="Delete" />
               </button>
@@ -70,12 +70,12 @@ export default function Post({
         </header>
         <div className="p-6 flex flex-col">
           <div className="flex items-center justify-between mb-4">
-            <p className="text-lg font-bold text-[#777777]">@{username}</p>
-            <span className="text-lg font-normal text-[#777777]">
+            <p className="text-base md:text-ls font-bold text-[#777777]">@{username}</p>
+            <span className="text-base md:text-lg font-normal text-[#777777]">
               {formatTimeAgo(created_datetime)}
             </span>
           </div>
-          <div className="text-lg font-normal">{content}</div>
+          <div className="text-base md:text-lg font-normal">{content}</div>
         </div>
       </div>
 

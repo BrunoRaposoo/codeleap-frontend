@@ -44,8 +44,8 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-white flex flex-col w-[50rem] m-auto">
-      <header className="flex items-center justify-between bg-primary w-full text-white text-[1.375rem] font-bold py-7 px-9">
+    <div className="bg-white flex flex-col w-full max-w-[50rem] mx-auto m-auto">
+      <header className="flex items-center justify-between bg-primary w-full text-white text-xl md:text-[1.375rem] font-bold py-7 px-9">
         <h1>CodeLeap Network</h1>
         <Button type="button" onClick={handleLogout}>
           <Image src={Logout} alt="Logout" width={20} height={20}/>
@@ -53,9 +53,9 @@ export default function Home() {
       </header>
       <div className="flex flex-col p-6">
         <div className="border border-#999999 rounded-2xl p-6">
-          <h1 className="text-[1.375rem] font-bold text-black mb-6">What’s on your mind?</h1>
-          <form onSubmit={handleSubmit} className="flex flex-col text-black">
-            <label htmlFor="title" className="text-base font-normal mb-2">Title</label>
+          <h1 className="text-xl md:text-[1.375rem] font-bold text-black mb-6">What’s on your mind?</h1>
+          <form onSubmit={handleSubmit} className="flex flex-col text-black text-sm md:text-base">
+            <label htmlFor="title" className="text-sm md:text-base font-normal mb-2">Title</label>
             <input 
               type="text" 
               className="border border-gray-500 rounded-lg py-2 px-3 mb-6 focus:outline-none focus:ring-1 focus:ring-primary"
@@ -63,7 +63,7 @@ export default function Home() {
               value={title}
               onChange={(e) => setTile(e.target.value)}
             />
-            <label htmlFor="content" className="text-base font-normal mb-2">Content</label>
+            <label htmlFor="content" className="text-sm md:text-base font-normal mb-2">Content</label>
             <textarea
               id="content"
               placeholder="Content here"
