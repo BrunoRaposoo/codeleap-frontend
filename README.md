@@ -1,36 +1,142 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 align="center"> CodeLeap Network </h1>
+A modern web application built with Next.js, React, and TypeScript that simulates a social network where users can create, view, edit, and delete text posts.
 
-## Getting Started
+<br>
 
-First, run the development server:
+<p align="center">
+  <a href="#-Technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Features">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Design System">Design System</a>&nbsp;&nbsp;&nbsp
+</p>
 
-```bash
+<br>
+
+<p align="center">
+  <img alt="responsividade" src="./github/cover.svg" width="100%">
+</p>
+
+## 🚀 Technologies
+- Next.js - React framework with App Router
+
+- React - UI library
+
+- TypeScript - Typed JavaScript
+
+- Tailwind CSS - Utility-first CSS framework
+
+- date-fns - Date utility library
+
+- HTML5 & CSS3 - Markup and styling
+
+## 📋 Features
+- Authentication
+Simple username-based signup
+
+- Session persistence via localStorage
+
+- Automatic redirect on logout
+
+- Posts
+Create posts with title and content
+
+- List posts ordered by date (newest first)
+
+- Edit posts (only own posts)
+
+- Delete posts (only own posts)
+
+- Automatic list updates after operations
+
+- Interface
+Responsive design for mobile and desktop
+
+- Confirmation modals for critical actions
+
+- Loading states with skeleton screens
+
+- Visual feedback for user actions
+
+## 🎨 Design System
+- Colors
+Primary: #7695EC
+
+- Background: #DDDDDD
+
+- Text: #000000
+
+- Danger: #FF5151
+
+- Success: #47B960
+
+- Typography
+Main Font: Roboto
+
+- Sizes: Scalable system with rem and em units
+
+- Components
+Buttons with variants (primary, danger, success, outline)
+
+- Reusable modals
+
+- Styled inputs and textareas
+
+- Post cards
+
+## ⚙️ Setup and Installation
+- Prerequisites
+Node.js 18+
+
+- npm or yarn
+
+- Execution Steps
+Clone the repository:
+
+- bash
+git clone <repository-url>
+cd frontend-codeleap
+Install dependencies:
+
+- bash
+npm install
+Run the development server:
+
+- bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 in your browser
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔧 Key Components
+- useUser Hook
+Manages user state and persists to localStorage.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- usePosts Hook
+Handles CRUD operations for posts and API communication.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Button Component
+Reusable component with multiple variants and states.
 
-## Learn More
+- Modal Components
+Modal system for action confirmations and content editing.
 
-To learn more about Next.js, take a look at the following resources:
+## Project
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To access the project, click [HERE](https://codeleap-frontend-eta.vercel.app/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## 📄 License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 👥 Contribution
+Fork the project
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Create a feature branch (git checkout -b feature/AmazingFeature)
+
+Commit your changes (git commit -m 'Add some AmazingFeature')
+
+Push to the branch (git push origin feature/AmazingFeature)
+
+Open a Pull Request
+
+## 📞 Contact
+For questions or suggestions, please contact through the project repository.
+
+Built with ❤️ using Next.js and React

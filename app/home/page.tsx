@@ -44,7 +44,7 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-white flex flex-col w-full max-w-[50rem] mx-auto m-auto">
+    <div className="bg-white flex flex-col w-full max-w-[50rem] mx-auto m-auto h-screen">
       <header className="flex items-center justify-between bg-primary w-full text-white text-xl md:text-[1.375rem] font-bold py-7 px-9">
         <h1>CodeLeap Network</h1>
         <Button type="button" onClick={handleLogout}>
